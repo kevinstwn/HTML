@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav ul li::after{
+    content: ''; 
+    height: 3px;
+    width: 0;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.nav{
+    width: 84%;
+    margin: auto;
+    /* padding: 35px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 300px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.forms label{
+    font-size: 30px;
+    margin-left: 300px;
+}
+
+.forms input, .forms textarea {
+    font-size: 30px;
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.forms select {
+    margin-bottom: 30px;
+    font-size: 30px;
+    margin-left: 20px;
+}
